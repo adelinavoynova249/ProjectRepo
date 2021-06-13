@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\DailyChores.ViewModels.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.deps.json
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.runtimeconfig.json
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.runtimeconfig.dev.json
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.dll
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.pdb
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.Models.dll
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.Models.pdb
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\obj\Release\netcoreapp3.1\DailyChores.Data.csprojAssemblyReference.cache
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\obj\Release\netcoreapp3.1\DailyChores.Data.AssemblyInfoInputs.cache
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\obj\Release\netcoreapp3.1\DailyChores.Data.AssemblyInfo.cs
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\obj\Release\netcoreapp3.1\DailyChores.Data.csproj.CoreCompileInputs.cache
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\obj\Release\netcoreapp3.1\DailyChores.Data.csproj.CopyComplete
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\obj\Release\netcoreapp3.1\DailyChores.Data.dll
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\obj\Release\netcoreapp3.1\DailyChores.Data.pdb
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\obj\Release\netcoreapp3.1\DailyChores.Data.genruntimeconfig.cache
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.xml
+C:\Users\Ady\source\repos\DailyChores\DailyChores.Data\bin\Release\netcoreapp3.1\DailyChores.Data.Models.xml

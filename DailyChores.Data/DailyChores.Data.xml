@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DailyChores.Data</name>
+    </assembly>
+    <members>
+        <member name="T:DailyChores.Data.ConfigurationData">
+            <summary>
+            The <c>DailyChores.Data.ConfigurationData</c> class.
+            Contains the string, which represents the required connection string to the database.
+            <list type="bullet">
+            <item>
+            <term>CONNECTION</term>
+            <description>Connection String</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>This ConfigurationData class contains the connection requirements for the databse.</para>
+            <para>These operations can be performed on Chore type objects only.</para>
+            </remarks>
+        </member>
+        <member name="F:DailyChores.Data.ConfigurationData.CONNECTION">
+            <summary>
+            Gives us a conenction to the databse..
+            </summary>
+            <returns>
+            Does not return anything in this case.
+            </returns>
+        </member>
+        <member name="T:DailyChores.Data.DailyChoresDbContext">
+            <summary>
+            The <c>DailyChores.Data.DailyChoresDbContext</c> class.
+            Initialises the DbContext that is used in the application and configures the connection to the sql server.
+            <list type="bullet">
+            <item>
+            <term>Constructor</term>
+            <description>Initialises the DbContext</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>This ConfigurationData class contains the connection requirements for the databse.</para>
+            <para>These operations can be performed on Chore type objects only.</para>
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DailyChores.Data.DailyChoresDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{DailyChores.Data.DailyChoresDbContext})" -->
+        <member name="P:DailyChores.Data.DailyChoresDbContext.Chores">
+            <summary>
+            Initialises a DbSet  from Chore.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DailyChores.Data.DailyChoresDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)" -->
+        <!-- Badly formed XML comment ignored for member "M:DailyChores.Data.DailyChoresDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)" -->
+    </members>
+</doc>

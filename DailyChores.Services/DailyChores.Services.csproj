@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\Ady\source\repos\DailyChores\DailyChores.Services\DailyChores.Services.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DailyChores.Data.Models\DailyChores.Data.Models.csproj" />
+    <ProjectReference Include="..\DailyChores.Data\DailyChores.Data.csproj" />
+    <ProjectReference Include="..\DailyChores.ViewModels\DailyChores.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

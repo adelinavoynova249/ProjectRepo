@@ -1,0 +1,36 @@
+﻿@model DailyChores.ViewModels.IndexAllChoresViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Index Single Chore Model</h4>
+    <hr />
+    @foreach (var chore in Model.Chores)
+    {
+<dl class="col">
+    <dd class="row-sm-10">
+        <p class="lead">@chore.Id.ToString()</p>
+    </dd>
+    <dd class="row-sm-10">
+        <p class="lead">@chore.Name</p>
+    </dd>
+    <dd class="row-sm-10">
+        <p class="lead">@chore.Description</p>
+    </dd>
+    <dd class="row-sm-10">
+        <p class="lead">@chore.CreatedOn</p>
+    </dd>
+    <dd class="row-sm-10">
+        <p class="lead">
+            <a asp-route-id="@chore.Id" asp-area="" asp-action="Delete" asp-controller="Chore" class="btn btn-primary btn-long" role="button">Delete</a>
+        </p>
+    </dd>
+</dl>
+    }
+
+</div>
+

@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DailyChores</name>
+    </assembly>
+    <members>
+        <member name="T:DailyChores.Controllers.ChoreController">
+            <summary>
+            The <c>Chore</c> Controller class.
+            Contains the link between the back-end Chore services and front-end Home Views.
+            <list type="bullet">
+            <item>
+            <term>Constructor</term>
+            <description>Initialises the class</description>
+            </item>
+            <item>
+            <term>Create</term>
+            <description>Loads the create view.</description>
+            </item>
+            <item>
+            <term>Create</term>
+            <description>Creates new Chore</description>
+            </item>
+            <item>
+            <term>Delete</term>
+            <description>Deletes a specified Chore</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>This controller connects the create and delete functionality for back-end and front-end.</para>
+            <para>These operations can be performed on Chore type objects only.</para>
+            </remarks>
+        </member>
+        <member name="M:DailyChores.Controllers.ChoreController.#ctor(DailyChores.Services.Contracts.IChoresService)">
+            <summary>
+            Initialises a service from <paramref name="service"/>.
+            </summary>
+            <returns>
+            Does not return anything in this case.
+            </returns>
+            <param name="service">An IChoresService object.</param>
+        </member>
+        <member name="M:DailyChores.Controllers.ChoreController.Create">
+            <summary>
+            Http Get request that displays the View Model(DailyChores.ViewModels.CreateChoreViewModel) for creating new Chore.
+            </summary>
+            <returns>
+            returns the Chore Create View;
+            </returns>
+        </member>
+        <member name="M:DailyChores.Controllers.ChoreController.Create(System.String,System.String)">
+             <summary>
+             Creates new Chore using <paramref name="name"/> and <paramref name="description"/> using the CreateChore method from the service.
+             </summary>
+             <returns>
+             After it creates the Chore, it redirects us back to the index page.
+             </returns>
+             <example>
+             This code example shows how the create method in service is working
+             <code>
+            public int CreateChore(string name, string description)
+            {
+                var chore = new Chore() { Name = name, Description = description };
+            
+               context.Chores.Add(chore);
+              context.SaveChanges();
+              return chore.Id;
+            }
+             </code>
+             </example>
+             <param name="name">A string.</param>
+             <param name="description">A string.</param>
+        </member>
+        <member name="M:DailyChores.Controllers.ChoreController.Delete(System.Int32)">
+             <summary>
+             Deletes a chore, given its Id in the database - <paramref name="id"/> .
+             </summary>
+             <returns>
+             After it deletes the Chore, it redirects us back to the index page.
+             </returns>
+             <example>
+             This code example shows how the delete method in service is working
+             <code>
+             public void Delete(int id)
+            {
+                var chore = this.context.Chores
+                    .SingleOrDefault(chore => chore.Id == id);
+               this.context.Remove(chore);
+               this.context.SaveChanges();
+             }
+             </code>
+             </example>
+             <param name="id">An integer.</param>
+        </member>
+        <member name="T:DailyChores.Controllers.HomeController">
+            <summary>
+            The <c>Home</c> Controller class.
+            Contains the link between the back-end Home services and front-end Home Views.
+            <list type="bullet">
+            <item>
+            <term>Constructor</term>
+            <description>Initialises the class</description>
+            </item>
+            <item>
+            <term>Index</term>
+            <description>Leads us to the initial web page of the application. Here it displays all Chores in the database</description>
+            </item>
+            <item>
+            <term>Error</term>
+            <description>custom Error Page</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>This Home controller contains the initial page of the project, where all Chore records are displayed.</para>
+            </remarks>
+        </member>
+        <member name="M:DailyChores.Controllers.HomeController.#ctor(DailyChores.Services.Contracts.IChoresService)">
+            <summary>
+            Initialises a service from <paramref name="service"/>.
+            </summary>
+            <returns>
+            Does not return anything in this case.
+            </returns>
+            <param name="service">An IChoresService object.</param>
+        </member>
+        <member name="M:DailyChores.Controllers.HomeController.Index">
+            <summary>
+            Displays all Chore records that are in the linked database.
+            </summary>
+            <returns>
+            returns the Details view, containing the list of all Chores.
+            </returns>
+        </member>
+        <member name="M:DailyChores.Controllers.HomeController.Error">
+            <summary>
+            custom Error Page.
+            </summary>
+            <returns>
+            returns the ErrorView.
+            </returns>
+        </member>
+        <member name="T:DailyChores.Program">
+            <summary>
+            The <c>Program</c> class.
+            This is the entry point of the application.
+            <list type="bullet">
+            <item>
+            <term>Main</term>
+            <description>Builds the program.</description>
+            </item>
+            <item>
+            <term>CreateHostBuilder</term>
+            <description>Sets up a host</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>This program class initialises the application.</para>
+            </remarks>
+        </member>
+        <member name="M:DailyChores.Program.Main(System.String[])">
+            <summary>
+            Builds the project.
+            </summary>
+            <returns>
+            Does not return anything in this case.
+            </returns>
+        </member>
+        <member name="M:DailyChores.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            creates a host.
+            </summary>
+        </member>
+        <member name="T:DailyChores.Startup">
+            <summary>
+            The <c>StartUp</c> class.
+            Configures services and the app's request pipeline
+            <list type="bullet">
+            <item>
+            <term>Constructor</term>
+            <description>Initialises the configuration.</description>
+            </item>
+            <item>
+            <term>Configuration</term>
+            <description>Get method for configuration.</description>
+            </item>
+            <item>
+            <term>ConfigureServices</term>
+            <description>Adds services to the container.</description>
+            </item>
+            <item>
+            <term>Configure</term>
+            <description>Configures the HTTP request pipeline.</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>This startup class configures the application.</para>
+            </remarks>
+        </member>
+        <member name="M:DailyChores.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initialises a configuration from <paramref name="configuration"/>.
+            </summary>
+            <returns>
+            Does not return anything in this case.
+            </returns>
+            <param name="configuration">An IConfiguration object.</param>
+        </member>
+        <member name="P:DailyChores.Startup.Configuration">
+            <summary>
+            get method for Configuration.
+            </summary>
+            <returns>
+            returns IConfiguration;
+            </returns>
+        </member>
+        <member name="M:DailyChores.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds services and DbContext to the project.
+            </summary>
+            <returns>
+            It is a void method;
+            </returns>
+        </member>
+        <member name="M:DailyChores.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configures the HTTP request pipeline.
+            </summary>
+            <returns>
+            It is a void method;
+            </returns>
+        </member>
+    </members>
+</doc>

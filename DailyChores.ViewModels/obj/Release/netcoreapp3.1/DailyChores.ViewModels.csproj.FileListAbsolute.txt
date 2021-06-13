@@ -1,0 +1,10 @@
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\bin\Release\netcoreapp3.1\DailyChores.ViewModels.deps.json
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\bin\Release\netcoreapp3.1\DailyChores.ViewModels.dll
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\bin\Release\netcoreapp3.1\DailyChores.ViewModels.pdb
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\bin\Release\netcoreapp3.1\DailyChores.ViewModels.xml
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\obj\Release\netcoreapp3.1\DailyChores.ViewModels.csprojAssemblyReference.cache
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\obj\Release\netcoreapp3.1\DailyChores.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\obj\Release\netcoreapp3.1\DailyChores.ViewModels.AssemblyInfo.cs
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\obj\Release\netcoreapp3.1\DailyChores.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\obj\Release\netcoreapp3.1\DailyChores.ViewModels.dll
+C:\Users\Ady\source\repos\DailyChores\DailyChores.ViewModels\obj\Release\netcoreapp3.1\DailyChores.ViewModels.pdb

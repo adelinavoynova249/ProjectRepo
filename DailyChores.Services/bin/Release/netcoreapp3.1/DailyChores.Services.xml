@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DailyChores.Services</name>
+    </assembly>
+    <members>
+        <member name="T:DailyChores.Services.ChoresService">
+            <summary>
+            The <c>DailyChores.Services.ChoreService</c> interface.
+            Overrides the methods from the revelant interface.
+            <list type="bullet">
+            <item>
+            <term>Constructor</term>
+            <description>Initialises the DbContext.</description>
+            </item>
+            <item>
+            <term>CreateChore</term>
+            <description>Creates new Chore from View Model.</description>
+            </item>
+            <item>
+            <term>GetAllChores</term>
+            <description>Returns all Chores, present in the database.</description>
+            </item>
+            <item>
+            <term>Delete</term>
+            <description>Deletes a Chore, based on its Id.</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>All back-end logic for Chore Motifying is here.</para>
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DailyChores.Services.ChoresService.#ctor(DailyChores.Data.DailyChoresDbContext)" -->
+        <!-- Badly formed XML comment ignored for member "M:DailyChores.Services.ChoresService.CreateChore(System.String,System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:DailyChores.Services.ChoresService.Delete(System.Int32)" -->
+        <member name="M:DailyChores.Services.ChoresService.GetAllChores">
+            <summary>
+            Gets all chores, that are in the database.
+            </summary>
+            <returns>
+            Returns a View Model for All Chores.
+            </returns>
+        </member>
+        <member name="T:DailyChores.Services.Contracts.IChoresService">
+            <summary>
+            The <c>DailyChores.Services.contracts.IChoreService</c> interface.
+            Gives the "wrap" of all methods that the service class for Chore should override.
+            <list type="bullet">
+            <item>
+            <term>CreateChore</term>
+            <description>Creates new Chore from View Model.</description>
+            </item>
+            <item>
+            <term>GetAllChores</term>
+            <description>Returns all Chores, present in the database.</description>
+            </item>
+            <item>
+            <term>Delete</term>
+            <description>Deletes a Chore, based on its Id.</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>These operations can be performed on Chore type objects only.</para>
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DailyChores.Services.Contracts.IChoresService.CreateChore(System.String,System.String)" -->
+        <member name="M:DailyChores.Services.Contracts.IChoresService.GetAllChores">
+            <summary>
+            Gets all chores, that are in the database.
+            </summary>
+            <returns>
+            Returns a View Model for All Chores.
+            </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DailyChores.Services.Contracts.IChoresService.Delete(System.Int32)" -->
+    </members>
+</doc>

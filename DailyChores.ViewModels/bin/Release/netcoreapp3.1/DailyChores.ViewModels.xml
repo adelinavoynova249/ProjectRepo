@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DailyChores.ViewModels</name>
+    </assembly>
+    <members>
+        <member name="T:DailyChores.ViewModels.CreateChoreViewModel">
+            <summary>
+            The <c>DailyChores.ViewModels.CreateChoreViewModel</c> interface.
+            This is the View Model that we need for Create View. For create, we only want the name of the Chore and its description.
+            <list type="bullet">
+            <item>
+            <term>Name</term>
+            <description>Name of Chore.</description>
+            </item>
+            <item>
+            <term>Description</term>
+            <description>Description of chore</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>View Model for the Create part.</para>
+            </remarks>
+        </member>
+        <member name="P:DailyChores.ViewModels.CreateChoreViewModel.Name">
+            <summary>
+            Shows the field with required Name input. 
+            </summary>
+        </member>
+        <member name="P:DailyChores.ViewModels.CreateChoreViewModel.Description">
+            <summary>
+            Shows the field with required Description input. 
+            </summary>
+        </member>
+        <member name="T:DailyChores.ViewModels.IndexAllChoresViewModel">
+            <summary>
+            The <c>DailyChores.ViewModels.IndexAllChoresViewModel</c> interface.
+            This is the View Model that we need for Details View. We need a collection with all chores in it.
+            <list type="bullet">
+            <item>
+            <term>Chores</term>
+            <description>Collection of all Chores..</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>Holds a collection of Chores</para>
+            </remarks>
+        </member>
+        <member name="P:DailyChores.ViewModels.IndexAllChoresViewModel.Chores">
+            <summary>
+            This is the Chores collection.
+            </summary>
+        </member>
+        <member name="T:DailyChores.ViewModels.IndexSingleChoreModel">
+            <summary>
+            The <c>DailyChores.ViewModels.IndexSingleChoreMode</c> interface.
+            This is the View Model that we need for Create View. For create, we only want the name of the Chore and its description.
+            <list type="bullet">
+            <item>
+            <term>Id</term>
+            <description>Unique Id of Chore.</description>
+            </item>
+            <item>
+            <term>Name</term>
+            <description>Name of Chore.</description>
+            </item>
+            <item>
+            <term>Description</term>
+            <description>Description of chore</description>
+            </item>
+            <item>
+            <term>CreatedOn</term>
+            <description>The datetime, when the chore was created.</description>
+            </item>
+            </list>
+            </summary>
+            <remarks>
+            <para>View Model for the Display Details part.</para>
+            </remarks>
+        </member>
+        <member name="P:DailyChores.ViewModels.IndexSingleChoreModel.Id">
+            <summary>
+            Shows the Id of the Chore. 
+            </summary>
+        </member>
+        <member name="P:DailyChores.ViewModels.IndexSingleChoreModel.Name">
+            <summary>
+            Shows the Name of the Chore. 
+            </summary>
+        </member>
+        <member name="P:DailyChores.ViewModels.IndexSingleChoreModel.Description">
+            <summary>
+            Shows the Description of the Chore. 
+            </summary>
+        </member>
+        <member name="P:DailyChores.ViewModels.IndexSingleChoreModel.CreatedOn">
+            <summary>
+            Shows when the Chore was created. 
+            </summary>
+        </member>
+    </members>
+</doc>
